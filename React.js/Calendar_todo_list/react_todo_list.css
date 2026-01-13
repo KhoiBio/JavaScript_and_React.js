@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+}
+.nav {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav button {
+  margin: 0 10px;
+  padding: 5px 10px;
+}
+.month-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+.day {
+  border: 1px solid #ccc;
+  padding: 10px;
+  min-height: 70px;
+  cursor: pointer;
+  text-align: center;
+}
+.day:hover {
+  background-color: #f5f5f5;
+}
+.selected {
+  background-color: #dbeafe;
+}
+.has-todo {
+  font-weight: bold;
+}
+.todo {
+  margin-top: 20px;
+}
+.todo input {
+  width: 70%;
+  padding: 6px;
+  margin-right: 6px;
+}
+.todo button {
+  padding: 6px 10px;
+}
+.todo li {
+  margin: 6px 0;
+  display: flex;
+  align-items: center;
+}
+.todo li span.completed {
+  text-decoration: line-through;
+  color: #888;
+  margin-left: 6px;
+  flex-grow: 1;
+}
+.todo li button {
+  margin-left: 10px;
+  padding: 2px 6px;
+}
